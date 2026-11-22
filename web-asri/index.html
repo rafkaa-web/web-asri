@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KasirNusa POS — Sistem Kasir & Laporan Ojol Terpadu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#beranda" class="brand">
+        <span class="brand-icon">KN</span>
+        <span class="brand-text">Kasir<span class="highlight">Nusa</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#beranda" class="nav-link">Beranda</a>
+        <a href="#fitur" class="nav-link">Fitur</a>
+        <a href="#simulasi" class="nav-link">Simulasi Kasir</a>
+        <a href="#harga" class="nav-link">Harga</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <div class="nav-actions-mobile">
+          <button class="btn btn-outline">Masuk</button>
+          <a href="#simulasi" class="btn btn-primary">Coba Gratis</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline">Masuk</button>
+        <a href="#simulasi" class="btn btn-primary">Coba Gratis</a>
+      </div>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Buka Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero" id="beranda">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="badge">Sistem POS UMKM, Kafe & Resto</span>
+        <h1>Kelola Kasir, Pesanan Ojol & QRIS dalam <span class="text-gradient">Satu Sistem Akurat</span></h1>
+        <p>Hitung otomatis pendapatan bersih pesanan Ojek Online, terima pembayaran QRIS, DANA, Transfer Bank, E-Wallet, hingga Tunai—semua langsung tercatat rapi ke laporan penjualan.</p>
+        <div class="hero-buttons">
+          <a href="#simulasi" class="btn btn-primary btn-lg">Coba Simulasi Kasir</a>
+          <a href="#fitur" class="btn btn-outline btn-lg">Pelajari Fitur</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <strong>100% Akurat</strong>
+            <span>Potongan Komisi Ojol</span>
+          </div>
+          <div>
+            <strong>Multi-Bayar</strong>
+            <span>QRIS, DANA, Bank & Tunai</span>
+          </div>
+          <div>
+            <strong>Real-Time</strong>
+            <span>Rekap Kas Masuk Sistem</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mockup UI Ringkas di Hero -->
+      <div class="hero-mockup">
+        <div class="mockup-card">
+          <div class="mockup-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="mockup-title">Ringkasan Kas Hari Ini — KasirNusa</span>
+          </div>
+          <div class="mockup-body">
+            <div class="mockup-metric">
+              <span>Total Pendapatan Bersih</span>
+              <h3>Rp 4.850.000</h3>
+              <small class="text-success">+18.4% dibanding kemarin</small>
+            </div>
+            <div class="mockup-channels">
+              <div class="channel-row">
+                <span>Dine-In / Takeaway</span>
+                <strong>Rp 2.650.000</strong>
+              </div>
+              <div class="channel-row">
+                <span>Ojek Online (Netto)</span>
+                <strong>Rp 2.200.000</strong>
+              </div>
+            </div>
+            <div class="mockup-methods">
+              <span class="pill">QRIS: Rp 1.850.000</span>
+              <span class="pill">DANA & E-Wallet: Rp 1.200.000</span>
+              <span class="pill">Bank: Rp 950.000</span>
+              <span class="pill">Tunai: Rp 850.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FITUR UNGGULAN ================= -->
+  <section class="section bg-light" id="fitur">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Fitur Lengkap</span>
+        <h2>Dirancang Agar Kasir Cepat & Pembukuan Selalu Pas</h2>
+        <p>Tidak perlu lagi menghitung manual selisih potongan aplikasi ojek online atau mencocokkan mutasi pembayaran satu per satu.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🛵</div>
+          <h3>Kalkulasi Ojek Online Pas</h3>
+          <p>Pilih sumber pesanan (Dine-In, GoFood, GrabFood, ShopeeFood). Sistem otomatis memisahkan harga jual kotor, potongan komisi aplikasi, dan pendapatan bersih toko.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>QRIS Dinamis Otomatis</h3>
+          <p>Generate kode QRIS langsung sesuai total tagihan pelanggan. Mengurangi risiko salah ketik nominal saat pelanggan memindai kode pembayaran.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💳</div>
+          <h3>Semua Metode Pembayaran</h3>
+          <p>Catat transaksi dari QRIS, DANA, E-Wallet (OVO/GoPay/ShopeePay), Transfer Bank, dan Uang Tunai dengan rekap saldo terpisah per akun.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Data Masuk Sistem Real-Time</h3>
+          <p>Setiap transaksi yang selesai langsung masuk ke riwayat penjualan, memperbarui omzet kotor, potongan ojol, hingga rincian kas masuk secara instan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SIMULASI MINI KASIR INTERAKTIF ================= -->
+  <section class="section" id="simulasi">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Live Demo Interaktif</span>
+        <h2>Coba Langsung KasirNusa POS</h2>
+        <p>Pilih saluran pesanan (Dine-In atau Ojek Online), klik menu makanan & minuman, pilih metode pembayaran, dan lihat seluruh datanya masuk ke sistem di bawah.</p>
+      </div>
+
+      <div class="pos-wrapper">
+        <!-- Kolom Kiri: Daftar Menu Makanan & Minuman -->
+        <div class="pos-menu-panel">
+          <div class="pos-panel-top">
+            <h3>Daftar Menu Toko</h3>
+            <div class="category-tabs">
+              <button class="cat-btn active" data-category="all">Semua</button>
+              <button class="cat-btn" data-category="makanan">Makanan</button>
+              <button class="cat-btn" data-category="minuman">Minuman</button>
+            </div>
+          </div>
+          <div class="menu-grid" id="menuGrid">
+            <!-- Diisi otomatis oleh script.js -->
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: Keranjang, Saluran Ojol & Pembayaran -->
+        <div class="pos-cart-panel">
+          <h3>Keranjang & Pembayaran</h3>
+
+          <!-- Pilihan Saluran Pesanan -->
+          <div class="form-group">
+            <label for="orderChannel">Sumber Pesanan (Channel):</label>
+            <select id="orderChannel" class="form-control">
+              <option value="dinein" data-fee="0" data-markup="0">Makan di Tempat / Takeaway (Potongan 0%)</option>
+              <option value="gofood" data-fee="0.20" data-markup="0.20">GoFood (Markup +20% | Komisi 20%)</option>
+              <option value="grabfood" data-fee="0.20" data-markup="0.20">GrabFood (Markup +20% | Komisi 20%)</option>
+              <option value="shopeefood" data-fee="0.18" data-markup="0.18">ShopeeFood (Markup +18% | Komisi 18%)</option>
+            </select>
+            <small class="channel-note" id="channelNote">Harga normal toko, pendapatan 100% masuk ke kasir.</small>
+          </div>
+
+          <!-- Item Keranjang -->
+          <div class="cart-items" id="cartItems">
+            <div class="empty-cart">Belum ada menu dipilih. Klik menu di sebelah kiri.</div>
+          </div>
+
+          <!-- Rincian Perhitungan Harga & Pendapatan Bersih -->
+          <div class="cart-summary">
+            <div class="summary-row">
+              <span>Harga Dasar Toko</span>
+              <span id="baseTotal">Rp 0</span>
+            </div>
+            <div class="summary-row" id="markupRow" style="display: none;">
+              <span>Penyesuaian Harga Ojol</span>
+              <span id="markupAmount">Rp 0</span>
+            </div>
+            <div class="summary-row total-tagihan">
+              <span>Total Tagihan Pelanggan</span>
+              <span id="customerTotal">Rp 0</span>
+            </div>
+            <div class="summary-row text-danger" id="feeRow" style="display: none;">
+              <span>Potongan Komisi Ojol</span>
+              <span id="platformFee">- Rp 0</span>
+            </div>
+            <div class="summary-row net-income">
+              <span>Pendapatan Bersih Toko</span>
+              <span id="netIncome">Rp 0</span>
+            </div>
+          </div>
+
+          <!-- Pilihan Metode Pembayaran -->
+          <div class="form-group">
+            <label>Metode Pembayaran:</label>
+            <div class="payment-methods" id="paymentMethods">
+              <button type="button" class="pay-btn active" data-method="Tunai">Tunai</button>
+              <button type="button" class="pay-btn" data-method="QRIS">QRIS</button>
+              <button type="button" class="pay-btn" data-method="DANA">DANA</button>
+              <button type="button" class="pay-btn" data-method="Transfer Bank">Bank</button>
+              <button type="button" class="pay-btn" data-method="E-Wallet">E-Wallet</button>
+            </div>
+          </div>
+
+          <!-- Input Uang Tunai (Muncul jika metode = Tunai) -->
+          <div class="form-group" id="cashInputGroup">
+            <label for="cashReceived">Uang Diterima (Rp):</label>
+            <input type="number" id="cashReceived" class="form-control" placeholder="Contoh: 50000" min="0">
+            <div class="change-display">
+              <span>Kembalian:</span>
+              <strong id="cashChange">Rp 0</strong>
+            </div>
+          </div>
+
+          <!-- Tampilan QRIS Dinamis (Muncul jika metode = QRIS) -->
+          <div class="qris-box" id="qrisBox" style="display: none;">
+            <div class="qris-header">
+              <strong>QRIS NASIONAL (NMID: ID102688990012)</strong>
+              <span>KASIRNUSA MERCHANT</span>
+            </div>
+            <div class="qris-canvas-wrap">
+              <canvas id="qrisCanvas" width="160" height="160"></canvas>
+            </div>
+            <p class="qris-nominal">Nominal Bayar: <strong id="qrisNominal">Rp 0</strong></p>
+            <small>Scan menggunakan DANA, GoPay, OVO, ShopeePay, atau Mobile Banking</small>
+          </div>
+
+          <!-- Info Pembayaran Non-Tunai Lainnya (DANA / Bank / E-Wallet) -->
+          <div class="digital-info-box" id="digitalInfoBox" style="display: none;">
+            <strong id="digitalAccountTitle">Tujuan Pembayaran DANA</strong>
+            <p id="digitalAccountDetail">0812-3456-7890 a.n. KasirNusa Store</p>
+            <small>Pastikan nominal transfer sesuai total tagihan sebelum menekan Proses.</small>
+          </div>
+
+          <div class="cart-actions">
+            <button type="button" class="btn btn-outline" id="resetCartBtn">Reset</button>
+            <button type="button" class="btn btn-success" id="checkoutBtn">Proses & Simpan ke Sistem</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= DASHBOARD REKAP DATA PENJUALAN SISTEM ================= -->
+      <div class="system-report-box">
+        <div class="report-header">
+          <div>
+            <h3>Laporan Penjualan Masuk Sistem (Real-Time)</h3>
+            <p>Semua transaksi dari Kasir maupun Ojek Online otomatis terekam dan dikelompokkan berdasarkan metode pembayaran.</p>
+          </div>
+          <button type="button" class="btn btn-outline btn-sm" id="clearHistoryBtn">Bersihkan Riwayat</button>
+        </div>
+
+        <!-- Kartu Rekap Pendapatan & Saldo Per Metode -->
+        <div class="report-cards">
+          <div class="rep-card primary">
+            <span>Total Pendapatan Bersih</span>
+            <h4 id="repNetTotal">Rp 0</h4>
+            <small id="repTxCount">0 Transaksi Selesai</small>
+          </div>
+          <div class="rep-card">
+            <span>Pendapatan Ojek Online (Netto)</span>
+            <h4 id="repOjolTotal">Rp 0</h4>
+            <small id="repOjolFee">Potongan Komisi: Rp 0</small>
+          </div>
+          <div class="rep-card">
+            <span>QRIS</span>
+            <h4 id="repQris">Rp 0</h4>
+            <small>Masuk Rekening Merchant</small>
+          </div>
+          <div class="rep-card">
+            <span>DANA & E-Wallet</span>
+            <h4 id="repEwallet">Rp 0</h4>
+            <small id="repDanaSplit">DANA: Rp 0 | Lainnya: Rp 0</small>
+          </div>
+          <div class="rep-card">
+            <span>Transfer Bank</span>
+            <h4 id="repBank">Rp 0</h4>
+            <small>BCA / Mandiri / BRI</small>
+          </div>
+          <div class="rep-card">
+            <span>Kas Tunai (Laci)</span>
+            <h4 id="repCash">Rp 0</h4>
+            <small>Uang Fisik di Kasir</small>
+          </div>
+        </div>
+
+        <!-- Tabel Riwayat Transaksi -->
+        <div class="table-responsive">
+          <table class="sales-table">
+            <thead>
+              <tr>
+                <th>ID & Waktu</th>
+                <th>Saluran</th>
+                <th>Menu Terjual</th>
+                <th>Metode</th>
+                <th>Tagihan</th>
+                <th>Komisi Ojol</th>
+                <th>Pendapatan Bersih</th>
+              </tr>
+            </thead>
+            <tbody id="salesTableBody">
+              <!-- Diisi otomatis oleh script.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PAKET HARGA ================= -->
+  <section class="section bg-light" id="harga">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Harga Transparan</span>
+        <h2>Pilih Paket Sesuai Skala Usaha Anda</h2>
+        <div class="pricing-toggle">
+          <span>Bulanan</span>
+          <label class="switch">
+            <input type="checkbox" id="billingToggle">
+            <span class="slider"></span>
+          </label>
+          <span>Tahunan <span class="discount-badge">Hemat 20%</span></span>
+        </div>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Starter UMKM</h3>
+          <p class="price-desc">Cocok untuk kedai kopi kecil dan warung rintisan.</p>
+          <div class="price-amount">
+            <span class="currency">Rp</span>
+            <span class="amount" data-monthly="0" data-yearly="0">0</span>
+            <span class="period">/bulan</span>
+          </div>
+          <ul class="price-features">
+            <li>✔ Maksimal 50 transaksi/hari</li>
+            <li>✔ Kasir Tunai & QRIS Statis</li>
+            <li>✔ Laporan penjualan harian</li>
+            <li>✖ Integrasi hitungan komisi Ojol</li>
+          </ul>
+          <a href="#simulasi" class="btn btn-outline btn-block">Mulai Gratis</a>
+        </div>
+
+        <div class="price-card popular">
+          <div class="popular-tag">Paling Laris</div>
+          <h3>Pro Bisnis</h3>
+          <p class="price-desc">Untuk kafe, resto, dan gerai dengan pesanan ojek online.</p>
+          <div class="price-amount">
+            <span class="currency">Rp</span>
+            <span class="amount" data-monthly="149.000" data-yearly="119.000">149.000</span>
+            <span class="period">/bulan</span>
+          </div>
+          <ul class="price-features">
+            <li>✔ Transaksi tanpa batas</li>
+            <li>✔ QRIS Dinamis otomatis nominal</li>
+            <li>✔ Kalkulasi otomatis GoFood, Grab, ShopeeFood</li>
+            <li>✔ Rekap terpisah QRIS, DANA, Bank, E-Wallet & Tunai</li>
+          </ul>
+          <a href="#simulasi" class="btn btn-primary btn-block">Coba Pro 14 Hari</a>
+        </div>
+
+        <div class="price-card">
+          <h3>Enterprise Multi-Cabang</h3>
+          <p class="price-desc">Untuk jaringan restoran dan waralaba banyak outlet.</p>
+          <div class="price-amount">
+            <span class="currency">Rp</span>
+            <span class="amount" data-monthly="399.000" data-yearly="319.000">399.000</span>
+            <span class="period">/bulan</span>
+          </div>
+          <ul class="price-features">
+            <li>✔ Semua fitur Pro Bisnis</li>
+            <li>✔ Manajemen stok bahan baku & resep</li>
+            <li>✔ Pantau laporan seluruh cabang real-time</li>
+            <li>✔ Dukungan prioritas 24/7</li>
+          </ul>
+          <a href="#simulasi" class="btn btn-outline btn-block">Hubungi Tim Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONI & FAQ ================= -->
+  <section class="section" id="faq">
+    <div class="container two-col-grid">
+      <!-- Testimoni -->
+      <div>
+        <span class="badge">Testimoni</span>
+        <h2 class="sub-heading">Dipercaya Pemilik Usaha Kuliner</h2>
+        <div class="testimonial-list">
+          <div class="testi-card">
+            <p>"Dulu sering pusing mencocokkan uang cair dari GoFood dan GrabFood karena potongannya beda-beda. Pakai KasirNusa, pendapatan bersihnya langsung pas."</p>
+            <strong>— Dimas Pratama, Owner Kopi Senja</strong>
+          </div>
+          <div class="testi-card">
+            <p>"QRIS-nya otomatis muncul nominal sesuai pesanan, jadi kasir tidak pernah salah ketik angka dan rekapan antara DANA, Bank, dan Tunai rapi setiap tutup toko."</p>
+            <strong>— Sari Wulandari, Pemilik Ayam Geprek Juara</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Accordion -->
+      <div>
+        <span class="badge">FAQ</span>
+        <h2 class="sub-heading">Pertanyaan yang Sering Diajukan</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">Bagaimana cara menghitung pendapatan ojek online agar pas? <span>+</span></button>
+            <div class="faq-answer">
+              <p>Anda cukup memilih saluran pesanan (GoFood, GrabFood, atau ShopeeFood). Sistem otomatis menghitung harga jual aplikasi, memotong persentase komisi platform, dan mencatat nominal bersih yang akan cair ke rekening toko Anda.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Apakah pembayaran dari DANA, Bank, dan E-Wallet terpisah? <span>+</span></button>
+            <div class="faq-answer">
+              <p>Ya. Setiap transaksi dikelompokkan berdasarkan metode bayarnya (QRIS, DANA, Transfer Bank, E-Wallet, atau Tunai) sehingga memudahkan proses rekonsiliasi saat tutup kasir.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Apakah bisa digunakan di HP, Tablet, maupun Laptop? <span>+</span></button>
+            <div class="faq-answer">
+              <p>Bisa. KasirNusa berbasis web responsif sehingga dapat dibuka melalui browser di perangkat Android, iPad, maupun komputer kasir tanpa instalasi rumit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#beranda" class="brand footer-brand">
+          <span class="brand-icon">KN</span>
+          <span class="brand-text">Kasir<span class="highlight">Nusa</span></span>
+        </a>
+        <p class="footer-desc">Solusi kasir digital modern untuk mengelola penjualan toko, pesanan ojek online, dan pembayaran non-tunai dengan akurat.</p>
+      </div>
+      <div>
+        <h4>Produk</h4>
+        <ul>
+          <li><a href="#fitur">Fitur Kasir</a></li>
+          <li><a href="#simulasi">Simulasi POS</a></li>
+          <li><a href="#harga">Paket Harga</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <ul>
+          <li>Email: halo@kasirnusa.id</li>
+          <li>WhatsApp: +62 812-8800-9900</li>
+          <li>Jam Operasional: 08.00 - 22.00 WIB</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 KasirNusa POS. Hak Cipta Dilindungi.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notifikasi -->
+  <div class="toast" id="toastNotif">Transaksi berhasil disimpan ke sistem!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
